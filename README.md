@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.icons8.com/fluency/96/warehouse.png" width="80" alt="Invytrax Logo" />
+<img src="https://img.icons8.com/fluency/96/warehouse.png" width="80" alt="CoreInventory Logo" />
 
 # Invytrax
 
@@ -469,7 +469,7 @@ Each transition is **permission-gated** and updates the stock ledger atomically.
 
 ### Prerequisites
 
-- **Node.js** ≥ 18.x
+- **Node.js** ≥ 20.9
 - **Neon PostgreSQL** account ([neon.tech](https://neon.tech)) or local Postgres
 
 ### 1️⃣ Clone & Install
@@ -693,7 +693,7 @@ _For **Internship Purpose**_
 
 [![GitHub](https://img.shields.io/badge/GitHub-KenishHirpara/Invytrax-181717?style=flat-square&logo=github)](https://github.com/KenishHirpara/Invytrax)
 
-Invytrax — Where precision meets elegance in warehouse management._
+Invytrax — Where precision meets elegance in warehouse management.
 
 <img src="https://img.icons8.com/fluency/96/warehouse.png" width="40" alt="logo" />
 

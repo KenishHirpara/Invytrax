@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider defaultTheme="light" storageKey="core-inventory-theme">
+        <ThemeProvider defaultTheme="light" storageKey="invytrax-theme">
           <TRPCProvider>{children}</TRPCProvider>
         </ThemeProvider>
       </body>
