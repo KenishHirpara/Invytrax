@@ -475,8 +475,8 @@ Each transition is **permission-gated** and updates the stock ledger atomically.
 ### 1️⃣ Clone & Install
 
 ```bash
-git clone https://github.com/Harmitx7/odoo.git
-cd odoo/stitch
+git clone https://github.com/KenishHirpara/Invytrax.git
+cd Invytrax/stitch
 npm install
 ```
 
@@ -520,7 +520,7 @@ App opens on **http://localhost:3000** 🎉
 ## 📁 Project Structure
 
 ```
-odoo/
+Invytrax/
 ├── stitch/                          # ← Full-stack Next.js monolith
 │   ├── src/
 │   │   ├── app/
@@ -679,7 +679,7 @@ odoo/
 
 ## 📄 License
 
-This project is built as part of **Odoo x Indus Hackathon**. All rights reserved.
+This project is built as part of **Internship Purpose**. All rights reserved.
 
 ---
 
@@ -687,11 +687,11 @@ This project is built as part of **Odoo x Indus Hackathon**. All rights reserved
 
 <img src="https://img.icons8.com/color/48/handshake.png" width="36" alt="team" />
 
-### Built with ❤️ by **Jenil Soni** · **Harmit Kalal** · **Aarth Patel**
+### Built with ❤️ by **Kenish Hirpara**
 
-_For **Odoo x Indus Hackathon**_
+_For **Internship Purpose**_
 
-[![GitHub](https://img.shields.io/badge/GitHub-Harmitx7/odoo-181717?style=flat-square&logo=github)](https://github.com/Harmitx7/odoo)
+[![GitHub](https://img.shields.io/badge/GitHub-KenishHirpara/Invytrax-181717?style=flat-square&logo=github)](https://github.com/KenishHirpara/Invytrax)
 
 Invytrax — Where precision meets elegance in warehouse management._
 
