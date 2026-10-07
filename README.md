@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://img.icons8.com/fluency/96/warehouse.png" width="80" alt="CoreInventory Logo" />
+<img src="https://img.icons8.com/fluency/96/warehouse.png" width="80" alt="Invytrax Logo" />
 
-# CoreInventory
+# Invytrax
 
 ### _Enterprise-Grade Warehouse & Inventory Management System_
 
@@ -25,7 +25,7 @@
   <img src="https://img.shields.io/badge/▶_Watch_Full_Demo-Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Watch Demo on Google Drive" />
 </a>
 &nbsp;&nbsp;
-<a href="https://github.com/Harmitx7/odoo/blob/core/docs/CoreInventory.MOV" target="_blank">
+<a href="https://github.com/Harmitx7/odoo/blob/core/docs/Invytrax.MOV" target="_blank">
   <img src="https://img.shields.io/badge/▶_Watch_Full_Demo-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Watch Demo on GitHub" />
 </a>
 
@@ -101,7 +101,7 @@ Toggle between themes with a single click. Preference is persisted via `localSto
 
 ### 🖨️ Print Receipt & PDF Export
 
-> **⭐ Highlight Feature** — One of the standout capabilities of CoreInventory.
+> **⭐ Highlight Feature** — One of the standout capabilities of Invytrax.
 
 The system generates **professional, print-ready receipt documents** for every warehouse operation — receipts, deliveries, transfers, adjustments, and even full stock inventory reports.
 
@@ -126,7 +126,7 @@ The system generates **professional, print-ready receipt documents** for every w
 
 | Aspect | Detail |
 |---|---|
-| 🏢 **Company Branding** | Includes the CoreInventory logo and "Warehouse Management System" tagline |
+| 🏢 **Company Branding** | Includes the Invytrax logo and "Warehouse Management System" tagline |
 | 📋 **Operation Details** | Date, status, created by, and reference number — all clearly formatted |
 | 🗺️ **Routing Section** | Shows **Source** and **Destination** locations with human-readable names |
 | 📦 **Product Lines Table** | Clean table with product name, SKU, category, UoM, quantities, and stock status |
@@ -394,7 +394,7 @@ Plus **"Print Stock Report"** and **"View Full Ledger"** quick action buttons.
 
 ## 📦 Warehouse Operations
 
-CoreInventory supports **4 types of inventory operations**, each with a complete lifecycle:
+Invytrax supports **4 types of inventory operations**, each with a complete lifecycle:
 
 ### Operation Types
 
@@ -693,7 +693,7 @@ _For **Odoo x Indus Hackathon**_
 
 [![GitHub](https://img.shields.io/badge/GitHub-Harmitx7/odoo-181717?style=flat-square&logo=github)](https://github.com/Harmitx7/odoo)
 
-_CoreInventory — Where precision meets elegance in warehouse management._
+Invytrax — Where precision meets elegance in warehouse management._
 
 <img src="https://img.icons8.com/fluency/96/warehouse.png" width="40" alt="logo" />
 

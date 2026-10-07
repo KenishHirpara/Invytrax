@@ -1,5 +1,5 @@
 /**
- * Production-grade PDF receipt generator for CoreInventory
+ * Production-grade PDF receipt generator for Invytrax
  * Supports: Receipts, Deliveries, Transfers, Adjustments
  * Features: Logo, professional header, styled tables, signature/stamp space, footer
  */
@@ -107,7 +107,7 @@ function drawLogo(doc: jsPDF, x: number, y: number) {
   doc.setFont("helvetica", "bold");
   doc.setFontSize(14);
   doc.setTextColor(...BRAND.dark);
-  doc.text("CoreInventory", x + 15, y + 7.5);
+  doc.text("Invytrax", x + 15, y + 7.5);
 
   doc.setFont("helvetica", "normal");
   doc.setFontSize(7);
@@ -458,7 +458,7 @@ export function generatePDF(opts: PDFGeneratorOptions): jsPDF {
     doc.setFontSize(6);
     doc.setTextColor(...BRAND.gray400);
     doc.text(
-      `Generated on ${new Date().toLocaleString()} • CoreInventory WMS`,
+      `Generated on ${new Date().toLocaleString()} • Invytrax WMS`,
       margin,
       pageH - 11
     );

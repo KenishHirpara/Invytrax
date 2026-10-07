@@ -32,11 +32,11 @@ async function mockSeed() {
   console.log("👤 Creating Indian Staff & Management...");
   const passwordHash = await bcrypt.hash("password123", 12);
   const users = await db.insert(schema.users).values([
-    { name: "Arjun Sharma", email: "arjun@coreinventory.in", passwordHash, role: "manager" },
-    { name: "Priya Patel", email: "priya@coreinventory.in", passwordHash, role: "manager" },
-    { name: "Rahul Deshmukh", email: "rahul@coreinventory.in", passwordHash, role: "staff" },
-    { name: "Sneha Reddy", email: "sneha@coreinventory.in", passwordHash, role: "staff" },
-    { name: "Amit Singh", email: "amit@coreinventory.in", passwordHash, role: "staff" },
+    { name: "Arjun Sharma", email: "arjun@invytrax.in", passwordHash, role: "manager" },
+    { name: "Priya Patel", email: "priya@invytrax.in", passwordHash, role: "manager" },
+    { name: "Rahul Deshmukh", email: "rahul@invytrax.in", passwordHash, role: "staff" },
+    { name: "Sneha Reddy", email: "sneha@invytrax.in", passwordHash, role: "staff" },
+    { name: "Amit Singh", email: "amit@invytrax.in", passwordHash, role: "staff" },
   ]).returning();
 
   const manager = users.find(u => u.role === "manager")!;

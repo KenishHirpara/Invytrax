@@ -42,7 +42,7 @@ export function Sidebar() {
           <Package className="w-4 h-4 text-white dark:text-primary-foreground" />
         </div>
         <div>
-          <p className="text-white font-semibold text-sm leading-tight">CoreInventory</p>
+          <p className="text-white font-semibold text-sm leading-tight">Invytrax</p>
           <p className="text-gray-500 dark:text-muted-foreground text-xs">
             {session?.user?.role === "manager" ? "Admin Panel" : "Enterprise IMS"}
           </p>

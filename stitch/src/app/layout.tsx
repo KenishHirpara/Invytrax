@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CoreInventory | Warehouse Management System",
+  title: "Invytrax | Warehouse Management System",
   description: "Real-time inventory management for small-to-medium businesses",
 };
 

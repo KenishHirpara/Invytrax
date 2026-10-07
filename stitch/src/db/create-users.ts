@@ -10,13 +10,13 @@ async function createAccounts() {
 
   const newUsers = [
     // Managers
-    { name: "Manager One", email: "manager1@coreinventory.com", passwordHash, role: "manager" },
-    { name: "Manager Two", email: "manager2@coreinventory.com", passwordHash, role: "manager" },
+    { name: "Manager One", email: "manager1@invytrax.com", passwordHash, role: "manager" },
+    { name: "Manager Two", email: "manager2@invytrax.com", passwordHash, role: "manager" },
     // Staff
-    { name: "Staff One", email: "staff1@coreinventory.com", passwordHash, role: "staff" },
-    { name: "Staff Two", email: "staff2@coreinventory.com", passwordHash, role: "staff" },
-    { name: "Staff Three", email: "staff3@coreinventory.com", passwordHash, role: "staff" },
-    { name: "Staff Four", email: "staff4@coreinventory.com", passwordHash, role: "staff" },
+    { name: "Staff One", email: "staff1@invytrax.com", passwordHash, role: "staff" },
+    { name: "Staff Two", email: "staff2@invytrax.com", passwordHash, role: "staff" },
+    { name: "Staff Three", email: "staff3@invytrax.com", passwordHash, role: "staff" },
+    { name: "Staff Four", email: "staff4@invytrax.com", passwordHash, role: "staff" },
   ] as const;
 
   try {

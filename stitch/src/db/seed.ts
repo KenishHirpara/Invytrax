@@ -12,7 +12,7 @@ import {
 import bcrypt from "bcryptjs";
 
 async function seed() {
-  console.log("🌱 Seeding CoreInventory database...");
+  console.log("🌱 Seeding Invytrax database...");
 
   // ── Categories ──────────────────────────────────────────────────────────────
   const [rawMats, electronics, packaging] = await db
@@ -58,14 +58,14 @@ async function seed() {
     .insert(users)
     .values([
       {
-        name: "Alex Rivers",
-        email: "manager@coreinventory.com",
+        name: "Kenish Hirpara",
+        email: "manager@invytrax.com",
         passwordHash,
         role: "manager",
       },
       {
         name: "Alex Morgan",
-        email: "staff@coreinventory.com",
+        email: "staff@invytrax.com",
         passwordHash,
         role: "staff",
       },
@@ -146,8 +146,8 @@ async function seed() {
   ]);
 
   console.log("✅ Seed complete.");
-  console.log("   Manager: manager@coreinventory.com / password123");
-  console.log("   Staff:   staff@coreinventory.com   / password123");
+  console.log("   Manager: manager@invytrax.com / password123");
+  console.log("   Staff:   staff@invytrax.com   / password123");
 }
 
 seed().catch(console.error);

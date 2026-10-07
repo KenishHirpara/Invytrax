@@ -1,6 +1,6 @@
-# /orchestrate — CoreInventory Build Plan
+# /orchestrate — Invytrax Build Plan
 
-> **Plan Basis:** `docs/PLAN-coreinventory-prd.md`
+> **Plan Basis:** `docs/PLAN-invytrax-prd.md`
 > **Stack:** Next.js 14 + TypeScript + tRPC + Drizzle ORM + PostgreSQL (Neon) + shadcn/ui + TanStack Query + NextAuth v5
 > **Protocol:** 3-Wave Sequential Dispatch with Tribunal gate between each wave.
 
@@ -8,7 +8,7 @@
 
 ## Phase A — Planning ✅ COMPLETE
 
-- `project-planner` → `docs/PLAN-coreinventory-prd.md` written and approved
+- `project-planner` → `docs/PLAN-invytrax-prd.md` written and approved
 - No existing codebase — greenfield project, `explorer-agent` not required.
 
 ---
@@ -24,9 +24,9 @@
 ```json
 {
   "agent": "database-architect",
-  "task": "Design and implement the complete Drizzle ORM schema for CoreInventory",
+  "task": "Design and implement the complete Drizzle ORM schema for Invytrax",
   "stack": "Drizzle ORM + PostgreSQL (Neon Serverless) + TypeScript",
-  "context_summary": "CoreInventory is a web-based IMS. All stock data is location-aware. Every stock movement must be immutably ledger-logged with product, quantity delta, source/dest location, user, timestamp, and linked document reference.",
+  "context_summary": "Invytrax is a web-based IMS. All stock data is location-aware. Every stock movement must be immutably ledger-logged with product, quantity delta, source/dest location, user, timestamp, and linked document reference.",
   "deliverables": [
     "schema.ts — All tables: users, roles, warehouses, locations, products, categories, receipts, receipt_lines, deliveries, delivery_lines, transfers, transfer_lines, adjustments, stock_ledger, stock_per_location, reorder_rules",
     "relations.ts — Drizzle relational map",
@@ -46,7 +46,7 @@
 ```json
 {
   "agent": "security-auditor",
-  "task": "Define auth security model and NextAuth v5 configuration for CoreInventory",
+  "task": "Define auth security model and NextAuth v5 configuration for Invytrax",
   "stack": "NextAuth v5 + Drizzle ORM + PostgreSQL + tRPC",
   "context_summary": "Two roles: Manager (full access) and Staff (scoped to assigned warehouses only). Auth: email/password + OTP password reset. Sessions must carry role and assigned warehouse IDs.",
   "deliverables": [
@@ -84,9 +84,9 @@
 ```json
 {
   "agent": "backend-specialist",
-  "task": "Implement all tRPC routers and business logic for CoreInventory",
+  "task": "Implement all tRPC routers and business logic for ",
   "stack": "tRPC + Drizzle ORM + Next.js 14 App Router + NextAuth v5",
-  "context_summary": "CoreInventory has 7 operation domains per the PRD. Key rule: stock only updates on document validation. Ledger is immutable and logged on every state change. Scope must be enforced at the tRPC context level for Staff role.",
+  "context_summary": "Invytrax has 7 operation domains per the PRD. Key rule: stock only updates on document validation. Ledger is immutable and logged on every state change. Scope must be enforced at the tRPC context level for Staff role.",
   "deliverables": [
     "server/routers/products.ts — CRUD, stock per location query, reorder rules",
     "server/routers/warehouses.ts — CRUD warehouses + sub-locations",
@@ -111,9 +111,9 @@
 ```json
 {
   "agent": "frontend-specialist",
-  "task": "Implement all UI screens for CoreInventory using the design specifications in the PRD",
+  "task": "Implement all UI screens for Invytrax using the design specifications in the PRD",
   "stack": "Next.js 14 App Router + TypeScript + shadcn/ui + Tailwind CSS + TanStack Query + tRPC client",
-  "context_summary": "CoreInventory has 11 distinct views per the PRD UI/UX spec. The design is clean, light-background with dark sidebar, indigo primary (#4F46E5), status pills (green/amber/red), paginated data tables across all list views.",
+  "context_summary": "Invytrax has 11 distinct views per the PRD UI/UX spec. The design is clean, light-background with dark sidebar, indigo primary (#4F46E5), status pills (green/amber/red), paginated data tables across all list views.",
   "deliverables": [
     "app/(auth)/login — Login card with email/password + SSO/Google buttons",
     "app/(auth)/reset — OTP password reset flow",
@@ -162,9 +162,9 @@
 ```json
 {
   "agent": "test-engineer",
-  "task": "Write and run integration + E2E tests for all CoreInventory operation flows",
+  "task": "Write and run integration + E2E tests for all Invytrax operation flows",
   "stack": "Vitest (unit/integration) + Playwright (E2E) + Next.js 14",
-  "context_summary": "CoreInventory is an IMS with immutable ledger. The most critical paths are: receipt validation increments stock, delivery validation decrements stock, adjustment syncs delta — all inside DB transactions. Every validated operation must have a corresponding ledger entry.",
+  "context_summary": "Invytrax is an IMS with immutable ledger. The most critical paths are: receipt validation increments stock, delivery validation decrements stock, adjustment syncs delta — all inside DB transactions. Every validated operation must have a corresponding ledger entry.",
   "deliverables": [
     "tests/unit/ledger.test.ts — Unit test: every stock mutation logs an immutable ledger entry",
     "tests/unit/stock-transaction.test.ts — Unit test: validate() runs stock mutation + ledger insert atomically",
@@ -199,7 +199,7 @@
 > This summary is injected into every worker dispatch as `context_summary` baseline.
 
 ```
-CoreInventory — Web-based IMS for SMBs.
+Invytrax — Web-based IMS for SMBs.
 Stack: Next.js 14 + TypeScript + tRPC + Drizzle ORM + PostgreSQL (Neon) + shadcn/ui + TanStack Query + NextAuth v5.
 Roles: Manager (full access) | Staff (scoped to assigned warehouses).
 Stock rule: location-aware. stock_per_location table. Never a global total.
@@ -224,7 +224,7 @@ Stock mutation: ONLY on transition to 'done'. All in DB transaction.
 ## Ready to Execute?
 
 ```
-✅ Orchestration plan ready: docs/ORCHESTRATE-coreinventory.md
+✅ Orchestration plan ready: docs/ORCHESTRATE-invytrax.md
 
 Approve Wave 1 to begin?
   → Wave 1: database-architect + security-auditor

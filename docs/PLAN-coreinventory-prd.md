@@ -1,7 +1,7 @@
-# Plan: CoreInventory PRD
+# Plan: Invytrax PRD
 
 ## What Done Looks Like
-A fully functional, web-based Inventory Management System (CoreInventory) deployed for SMBs that accurately logs every stock movement across multiple warehouses, achieves ≥98% stock accuracy, reduces manual processing time by 60%, ensures zero untracked movements, and updates dashboard KPIs with <5 seconds latency.
+A fully functional, web-based Inventory Management System (Invytrax) deployed for SMBs that accurately logs every stock movement across multiple warehouses, achieves ≥98% stock accuracy, reduces manual processing time by 60%, ensures zero untracked movements, and updates dashboard KPIs with <5 seconds latency.
 
 ## Won't Include in This Version
 - Procurement and purchase order management
@@ -45,7 +45,7 @@ graph TD
 Based on the provided wireframes and mockups, the user interface should implement the following primary screens and functional blocks:
 
 ### 1. Authentication (Login / Sign Up)
-- **Layout:** Centered card with the site logo ("CoreInventory").
+- **Layout:** Centered card with the site logo ("Invytrax").
 - **Fields:** Email Address, Password.
 - **Controls:** "Remember me for 30 days" toggle, Forgot Password link.
 - **Actions:** Primary "Sign In" button with an arrow icon.
@@ -55,7 +55,7 @@ Based on the provided wireframes and mockups, the user interface should implemen
 ### 2. Main Dashboard (`/dashboard`)
 - **Navigation Navbar/Sidebar:** 
   - **Top:** Global search bar ("Search data..."), Notifications bell, Help icon icon.
-  - **Sidebar:** CoreInventory logo, User Profile (e.g., Alex Rivers / Manager), sections for Dashboard, Inventory, Receipts, Deliveries, Warehouses, Reports, Settings.
+  - **Sidebar:** Invytrax logo, User Profile (e.g., Kenish Hirpara / Manager), sections for Dashboard, Inventory, Receipts, Deliveries, Warehouses, Reports, Settings.
 - **Primary KPIs (Top Row Cards):** 
   - Total Products (count)
   - Low Stock (warning icon, count)
@@ -81,7 +81,7 @@ Based on the provided wireframes and mockups, the user interface should implemen
 - **Pagination:** Bottom right showing current items (e.g., 1 to 5 of 42) and page controls.
 
 ### 4. Receipt Detail / Validation View (`/operations/receipts/{id}`)
-- **Header Structure:** Breadcrumbs across top (`Dashboard / Operations / Receipts`). Contextual document ID (e.g., REC/00001) next to "CoreInventory System".
+- **Header Structure:** Breadcrumbs across top (`Dashboard / Operations / Receipts`). Contextual document ID (e.g., REC/00001) next to "Invytrax System".
 - **Primary Actions:** "Validate" main button top right.
 - **Status Tracker:** Horizontal tab bar / timeline indicating current state (Scheduled, Draft, Confirmed).
 - **Core Form Fields (Read/Write inputs):** 
